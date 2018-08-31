@@ -1,0 +1,55 @@
+.cl-drag-nav {
+  position: relative;
+  width: 100%;
+  height: 1.92592593rem;
+  box-sizing: border-box;
+  padding: 0.45925926rem 0 0.20740741rem;
+  background: #FFFFFF;
+}
+.cl-drag-nav:before {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #23bfab;
+}
+@media (-webkit-device-pixel-ratio: 2) {
+  .cl-drag-nav:before {
+    transform: scaleY(0.5);
+  }
+}
+@media (-webkit-device-pixel-ratio: 3) {
+  .cl-drag-nav:before {
+    transform: scaleY(0.33333333);
+  }
+}
+.cl-drag-nav .list {
+  font-size: 0;
+  white-space: nowrap;
+  float: left;
+}
+.cl-drag-nav .list > li {
+  display: inline-block;
+  height: 1.25925926rem;
+  /*padding: 0 38/@rem;*/
+  color: #020202;
+  font-size: 0.66666667rem;
+  line-height: 1.25925926rem;
+  /*&.active{
+        border-bottom: 10/@rem solid #27bfab;
+        !*background: #27bfab;*!
+        color: #FFFFFF;
+      }*/
+}
+.cl-drag-nav .list > li a {
+  color: black;
+  display: block;
+  height: 100%;
+  padding: 0 0.56296296rem;
+}
+.cl-drag-nav .list > li a.active {
+  border-bottom: 0.14814815rem solid #27bfab;
+  color: black;
+}

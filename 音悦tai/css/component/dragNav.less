@@ -1,0 +1,38 @@
+@rem:1080/16rem;
+@import "../mixin/1-px";
+.cl-drag-nav{
+   .1-px(bottom,#23bfab);
+  width: 100%;
+  height: 130/@rem;
+  box-sizing: border-box;
+  padding: 31/@rem 0 14/@rem;
+  background: #FFFFFF;
+  .list{
+    font-size: 0;
+    white-space: nowrap;
+    float: left;
+    & > li{
+      display: inline-block;
+      height: 85/@rem;
+      /*padding: 0 38/@rem;*/
+      color: #020202;
+      font-size: 45/@rem;
+      line-height: 85/@rem;
+      /*&.active{
+        border-bottom: 10/@rem solid #27bfab;
+        !*background: #27bfab;*!
+        color: #FFFFFF;
+      }*/
+      a{
+        color: black;
+        display: block;
+        height: 100%;
+        padding: 0 38/@rem;
+        &.active{
+          border-bottom: 10/@rem solid #27bfab;
+          color: black;
+        }
+      }
+    }
+  }
+}
